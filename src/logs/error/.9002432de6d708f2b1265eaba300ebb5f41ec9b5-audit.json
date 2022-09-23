@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\arun_work\\stripe\\backend\\src\\logs\\error\\.9002432de6d708f2b1265eaba300ebb5f41ec9b5-audit.json",
+    "files": [
+        {
+            "date": 1663914738843,
+            "name": "C:\\arun_work\\stripe\\backend\\src\\logs\\error\\2022-09-23.log",
+            "hash": "8cfad1ebe9152f6dc4ece637c001ffd389f38f6cebba781531e02c0a095ab7c7"
+        }
+    ],
+    "hashType": "sha256"
+}

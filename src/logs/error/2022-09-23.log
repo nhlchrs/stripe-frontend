@@ -1,0 +1,48 @@
+2022-09-23 12:02:50 error: uncaughtException: connect ECONNREFUSED 127.0.0.1:27017
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (C:\arun_work\stripe\backend\node_modules\mongoose\lib\connection.js:824:32)
+    at C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:381:10
+    at C:\arun_work\stripe\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\arun_work\stripe\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:1234:10)
+    at Mongoose.connect (C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:380:20)
+    at App.connectToDatabase (C:\arun_work\stripe\backend\src\app.ts:49:12)
+    at new App (C:\arun_work\stripe\backend\src\app.ts:24:10)
+    at Object.<anonymous> (C:\arun_work\stripe\backend\src\server.ts:7:13)
+2022-09-23 12:10:56 error: uncaughtException: connect ECONNREFUSED 127.0.0.1:27017
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (C:\arun_work\stripe\backend\node_modules\mongoose\lib\connection.js:824:32)
+    at C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:381:10
+    at C:\arun_work\stripe\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\arun_work\stripe\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:1234:10)
+    at Mongoose.connect (C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:380:20)
+    at App.connectToDatabase (C:\arun_work\stripe\backend\src\app.ts:49:12)
+    at new App (C:\arun_work\stripe\backend\src\app.ts:24:10)
+    at Object.<anonymous> (C:\arun_work\stripe\backend\src\server.ts:7:13)
+2022-09-23 12:11:55 error: uncaughtException: connect ECONNREFUSED 127.0.0.1:27017
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (C:\arun_work\stripe\backend\node_modules\mongoose\lib\connection.js:824:32)
+    at C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:381:10
+    at C:\arun_work\stripe\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\arun_work\stripe\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:1234:10)
+    at Mongoose.connect (C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:380:20)
+    at App.connectToDatabase (C:\arun_work\stripe\backend\src\app.ts:49:12)
+    at new App (C:\arun_work\stripe\backend\src\app.ts:24:10)
+    at Object.<anonymous> (C:\arun_work\stripe\backend\src\server.ts:8:13)
+2022-09-23 12:12:44 error: uncaughtException: connect ECONNREFUSED 127.0.0.1:27017
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (C:\arun_work\stripe\backend\node_modules\mongoose\lib\connection.js:824:32)
+    at C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:381:10
+    at C:\arun_work\stripe\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\arun_work\stripe\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:1234:10)
+    at Mongoose.connect (C:\arun_work\stripe\backend\node_modules\mongoose\lib\index.js:380:20)
+    at App.connectToDatabase (C:\arun_work\stripe\backend\src\app.ts:49:12)
+    at new App (C:\arun_work\stripe\backend\src\app.ts:24:10)
+    at Object.<anonymous> (C:\arun_work\stripe\backend\src\server.ts:8:13)
