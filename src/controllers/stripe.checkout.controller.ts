@@ -16,7 +16,7 @@ class StripeCheckoutController {
       const paymentIntent = await stripe.paymentIntents.create({
         customer: customer.id,
         amount: req.body.amount * 100,
-        currency: { STRIPE_CURRENCY },
+        currency: STRIPE_CURRENCY,
         application_fee_amount: application_fees(req.body.amount),
         transfer_data: {
           destination: req.body.stripe_account_id,
