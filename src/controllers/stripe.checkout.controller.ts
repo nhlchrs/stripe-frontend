@@ -22,7 +22,6 @@ class StripeCheckoutController {
           destination: req.body.stripe_account_id,
         },
       });
-
       const clientSecret = paymentIntent.client_secret;
 
       res.status(200).json({ data: clientSecret, message: 'checkout' });
