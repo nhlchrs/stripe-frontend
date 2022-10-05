@@ -4,6 +4,8 @@
  * @returns {Boolean} true & false
  * @description this value is Empty Check
  */
+import { STRIPE_APPLICATION_FEE } from '@config';
+
 export const isEmpty = (value: string | number | object): boolean => {
   if (value === null) {
     return true;
@@ -17,3 +19,10 @@ export const isEmpty = (value: string | number | object): boolean => {
     return false;
   }
 };
+
+export const application_fees = (amount: number) => {
+  let application_fee = (3.5 * amount) / 100;
+  console.log(amount, application_fee, "niajooko")
+  console.log(Math.round(application_fee * 100))
+  return Math.round(application_fee * 100);
+}
