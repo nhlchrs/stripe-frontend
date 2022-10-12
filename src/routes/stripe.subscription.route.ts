@@ -15,6 +15,7 @@ class StripeSubscriptionRoute implements Routes {
 
   private initializeRoutes() {
     this.router.post(`${this.path}/create`, this.stripeSubscriptionController.subscribeCustomer);
+    this.router.post(`${this.path}/invoice-web-hook`, this.stripeSubscriptionController.subscriptionWebhook);
   }
 }
 

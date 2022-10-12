@@ -3,6 +3,7 @@ import { STRIPE_SECRET, STRIP_COUNTRY, STRIPE_REFRESH_URL, STRIPE_RETURN_URL } f
 // import { Vendor } from '@interfaces/vendor.interface';
 // import { CreateStripeSaveAccount } from '@/dtos/stripe.saveaccount.dto';
 import VendorService from '@services/vendor.service';
+import { logger } from '@utils/logger';
 
 const stripe = require('stripe')(STRIPE_SECRET);
 
@@ -28,10 +29,21 @@ class StripeSubscriptionController {
         payment_behavior: 'default_incomplete',
         expand: ['latest_invoice.payment_intent'],
       });
-
       const clientSecret = subscription.latest_invoice.payment_intent.client_secret;
-
       res.status(200).json({ data: clientSecret, message: 'subscriptionClientSecret' });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  public subscriptionWebhook = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const event = req.body;
+      console.log('event', event);
+      if (event.type === 'invoice.finalized') {
+        logger.info(`event: ${JSON.stringify(event, null, "\t")}`);
+      }
+      res.status(200).json({ message: 'success' });
     } catch (error) {
       next(error);
     }
